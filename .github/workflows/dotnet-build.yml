@@ -16,6 +16,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
+  # Script personalizado 
+    - name: personalizando script
+      run: |
+        echo "Executando personalizacao"
+        
+        echo "Script executado com sucesso"    
+
     # ação pré-existente configurar o Node.js
     - name: Setup Node.js
       uses: actions/setup-node@v3
